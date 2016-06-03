@@ -1,0 +1,10 @@
+<ion-view view-title="Home">
+  <ion-content class="padding">
+    <h2>Empréstimos</h2>
+    <ul class="list list-inset">
+        <li class="item" ng-repeat="emprestimo in emprestimos">
+          <ion-checkbox ng-model="emprestimo.devolvido" ng-click="changeStatus(emprestimo)">{{emprestimo.titulo}}</ion-checkbox>
+        </li>
+    </ul>
+  </ion-content>
+</ion-view>
